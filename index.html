@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wesley Tiago | Portfolio</title>
+    <meta name="description" content="Portfólio de Wesley Tiago - Software Engineer com foco em Backend, IA e sistemas escaláveis." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-logo" aria-hidden="true">W</span>
+        <div>
+          <p>Wesley Tiago</p>
+          <small>Software Engineer | Backend & AI Systems</small>
+        </div>
+      </div>
+
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+      <nav class="site-nav" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Competências</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">🌗</button>
+        <a class="button button-primary" href="Profile (8).pdf" target="_blank" rel="noreferrer">Baixar CV</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-hero reveal" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Olá, eu sou</p>
+          <h1>Wesley Tiago</h1>
+          <p class="hero-description">
+            Engenheiro de software com mais de 6 anos de experiência em sistemas escaláveis, APIs robustas e soluções de IA.
+            Na Technico, construo SaaS, automações e projetos de GenAI que ajudam empresas a reduzir trabalho manual e acelerar decisões.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contato">Fale comigo</a>
+            <a class="button button-secondary" href="#projetos">Ver projetos</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo glow-card">
+            <img src="profile.jpg" alt="Foto de perfil de Wesley Tiago" class="profile-image" />
+          </div>
+          <div class="hero-card glow-card">
+            <div class="hero-card-header">
+              <span>Software Engineer</span>
+              <strong>Backend · IA · Arquitetura</strong>
+            </div>
+            <div class="hero-card-body">
+              <p><strong>Localização:</strong> Curitiba, Paraná, Brasil</p>
+              <p><strong>Idiomas:</strong> Inglês profissional</p>
+              <p><strong>Objetivo:</strong> Desenvolver soluções com IA aplicada que gerem impacto real em produtos e negócios.</p>
+            </div>
+            <div class="hero-card-tags">
+              <span>Node.js</span>
+              <span>TypeScript</span>
+              <span>Python</span>
+              <span>AWS</span>
+              <span>RAG</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-about reveal" id="sobre">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <div>
+            <h2>Sobre</h2>
+            <p>Visão geral do meu perfil e motivações.</p>
+          </div>
+        </div>
+        <div class="about-grid">
+          <article class="about-card glow-card">
+            <h3>Perfil</h3>
+            <p>
+              Engenheiro de software com foco em Backend Architecture e sistemas de IA, com experiência no desenvolvimento de plataformas escaláveis e APIs robustas.
+              Acredito em arquitetura limpa, DDD e soluções que ajudam times e negócios a evoluir de forma sustentável.
+            </p>
+          </article>
+          <article class="about-card glow-card">
+            <h3>Como atuo</h3>
+            <ul>
+              <li>Arquitetura backend e microsserviços</li>
+              <li>Desenvolvimento de APIs REST e OpenAPI</li>
+              <li>Soluções com RAG e multi-agent systems</li>
+              <li>Automação inteligente e pipelines de dados</li>
+              <li>Infraestrutura cloud e deploy com CI/CD</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-skills reveal" id="skills">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <div>
+            <h2>Competências</h2>
+            <p>Principais tecnologias e habilidades técnicas.</p>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card glow-card">
+            <h3>Backend e APIs</h3>
+            <p>Node.js, NestJS, TypeScript, Python, PostgreSQL, DynamoDB, Redis, Docker.</p>
+          </div>
+          <div class="skill-card glow-card">
+            <h3>Inteligência Artificial</h3>
+            <p>RAG, LangChain, AWS Bedrock, processamento de documentos, agentes inteligentes.</p>
+          </div>
+          <div class="skill-card glow-card">
+            <h3>Cloud e DevOps</h3>
+            <p>AWS, Terraform, GitHub Actions, Docker, App Runner, CI/CD e infraestrutura escalável.</p>
+          </div>
+          <div class="skill-card glow-card">
+            <h3>Front-end</h3>
+            <p>React 18, Vite, Next.js, TypeScript, Radix UI, Tailwind CSS, React Hook Form, acessibilidade.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-services reveal" id="servicos">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <div>
+            <h2>Serviços Corporativos</h2>
+            <p>Soluções da Technico para empresas que precisam automatizar, criar SaaS e implementar GenAI.</p>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card glow-card">
+            <h3>SaaS e plataformas digitais</h3>
+            <p>Desenvolvo produtos digitais com modelos SaaS, estrutura escalável e operação pronta para contratos recorrentes.</p>
+          </article>
+          <article class="service-card glow-card">
+            <h3>Automação e integrações</h3>
+            <p>Automatizo processos internos, conecto sistemas e crio fluxos que reduzem trabalho manual e aumentam eficiência.</p>
+          </article>
+          <article class="service-card glow-card">
+            <h3>GenAI e RAG</h3>
+            <p>Implanto soluções com IA generativa, agentes, busca inteligente e RAG para extrair valor direto de documentos e dados.</p>
+          </article>
+        </div>
+
+        <div class="service-cta glow-card">
+          <h3>Pronto para seu próximo projeto?</h3>
+          <p>Tenho empresa aberta e experiência prática em SaaS. Vamos avaliar seu caso e criar um sistema inteligente para sua operação.</p>
+          <a class="button button-primary" href="#contato">Solicitar proposta</a>
+        </div>
+      </section>
+
+      <section class="section section-projects reveal" id="projetos">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <div>
+            <h2>Projetos</h2>
+            <p>Alguns destaques do meu trabalho técnico e impacto em negócio.</p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card glow-card">
+            <h3>Plataforma AiTech</h3>
+            <p>Construção completa de uma solução FSM com 6 serviços integrados, back-end NestJS, Prisma/PostgreSQL, AWS e painel React responsivo.</p>
+            <p class="project-meta">Arquitetura, APIs, automação e UX para times de campo.</p>
+          </article>
+          <article class="project-card glow-card">
+            <h3>Soluções de IA com RAG</h3>
+            <p>Implementação de pipelines de agentes inteligentes, extração de documentos e geração de conteúdo automatizado usando LangChain e AWS Bedrock.</p>
+            <p class="project-meta">Processamento de dados, busca contextual e feedback dinâmico.</p>
+          </article>
+          <article class="project-card glow-card">
+            <h3>Front-end moderno</h3>
+            <p>Desenvolvimento de SPAs performáticas com React, validação robusta, acessibilidade e interfaces mobile-first orientadas à conversão.</p>
+            <p class="project-meta">UI limpa, performance e experiência do usuário.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-experience reveal" id="experiencia">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <div>
+            <h2>Experiência</h2>
+            <p>Principais posições e responsabilidades.</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item glow-card">
+            <span class="timeline-date">mai 2023 - Presente</span>
+            <h3>TECHNICO</h3>
+            <p class="timeline-role">Software Architect & Full Stack Engineer — Plataforma AiTech</p>
+            <ul>
+              <li>Arquitetura e implementação de plataforma FSM com 6 serviços integrados.</li>
+              <li>API REST com NestJS, Clean Architecture, DDD e Prisma/PostgreSQL.</li>
+              <li>Front-end React + TypeScript com TanStack Query, Radix UI e Tailwind CSS.</li>
+              <li>Infraestrutura dockerizada, Terraform, AWS App Runner e pipelines GitHub Actions.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item glow-card">
+            <span class="timeline-date">jun 2025 - mai 2026</span>
+            <h3>BlueMetrics</h3>
+            <p class="timeline-role">Engenheiro de Software</p>
+            <ul>
+              <li>Desenvolvimento de arquiteturas backend escaláveis e aplicações de IA.</li>
+              <li>Criação de soluções com orquestração de agentes, RAG e processamento inteligente de documentos.</li>
+              <li>Integração entre serviços em Node.js, Python e Ruby.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item glow-card">
+            <span class="timeline-date">ago 2023 - abr 2025</span>
+            <h3>Aitend</h3>
+            <p class="timeline-role">Engenheiro Full Stack Pleno</p>
+            <ul>
+              <li>Desenvolvimento backend serverless na AWS e APIs REST seguras.</li>
+              <li>Construção de front-ends React modernos e fluxos de chatbot com OpenAI.</li>
+              <li>Criação de pipelines CI/CD, Docker, Terraform e mensageria RabbitMQ.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item glow-card">
+            <span class="timeline-date">jan 2024 - out 2024</span>
+            <h3>TeamSix</h3>
+            <p class="timeline-role">Desenvolvedor Full Stack</p>
+            <ul>
+              <li>Manutenção de aplicações web com foco em experiência de usuário e performance.</li>
+              <li>Back-end em NestJS e front-end em Next.js / React.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item glow-card">
+            <span class="timeline-date">set 2023 - dez 2023</span>
+            <h3>Golive Consultoria SAP B1</h3>
+            <p class="timeline-role">Desenvolvedor Full Stack</p>
+            <ul>
+              <li>Integração com SAP B1 e desenvolvimento de aplicações web com Node.js e MongoDB.</li>
+              <li>Implementação de componentes React e lógica de cache eficiente.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item glow-card">
+            <span class="timeline-date">mai 2022 - fev 2023</span>
+            <h3>Digistarts</h3>
+            <p class="timeline-role">Full Stack Developer</p>
+            <ul>
+              <li>Desenvolvimento em Node.js, Python Flask e C# .NET.</li>
+              <li>Trabalho com AngularJS, integração de APIs e fila com RabbitMQ.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item glow-card">
+            <span class="timeline-date">set 2020 - mai 2022</span>
+            <h3>JBQ.Global</h3>
+            <p class="timeline-role">Desenvolvedor de Back End</p>
+            <ul>
+              <li>Atuação em e-commerce com Node.js, React, AWS e Oracle PL/SQL.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item glow-card">
+            <span class="timeline-date">jun 2019 - set 2020</span>
+            <h3>Ecompleto Tecnologia e Sistemas</h3>
+            <p class="timeline-role">Desenvolvedor</p>
+            <ul>
+              <li>Projetos em JavaScript, PHP e PostgreSQL para e-commerce.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-education reveal" id="formacao">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <div>
+            <h2>Formação</h2>
+            <p>Educação formal e treinamentos relevantes.</p>
+          </div>
+        </div>
+        <div class="education-grid">
+          <article class="education-card glow-card">
+            <h3>Universidade Positivo</h3>
+            <p>Graduação em Sistemas de Informação (fevereiro de 2019 - dezembro de 2022)</p>
+          </article>
+          <article class="education-card glow-card">
+            <h3>Rocketseat</h3>
+            <p>Ignite Rocketseat, Trilha Ignite (janeiro de 2024 - janeiro de 2025)</p>
+          </article>
+          <article class="education-card glow-card">
+            <h3>Colégio Estadual Pedro Macedo</h3>
+            <p>Técnico em Informática, Tecnologia da Informação (2014 - 2017)</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-contact reveal" id="contato">
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <div>
+            <h2>Contato</h2>
+            <p>Vamos conversar sobre seu próximo projeto.</p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card glow-card">
+            <h3>Fale comigo</h3>
+            <p><strong>Telefone:</strong> +55 41 98762-4713</p>
+            <p><strong>Email:</strong> <a href="mailto:wes.tiago15@gmail.com">wes.tiago15@gmail.com</a></p>
+          </div>
+          <div class="contact-card glow-card">
+            <h3>Redes</h3>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/wesleysontiago" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/wesleysontiago" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://github.com/wesleysontiago" target="_blank" rel="noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="contact-card contact-card-highlight glow-card">
+            <h3>O que eu ofereço</h3>
+            <p>
+              Soluções de engenharia de software que combinam arquitetura escalável, aplicações inteligentes e uma experiência de produto sólida.
+            </p>
+            <p>Pronto para apoiar contratações em Backend, IA e desenvolvimento de produtos digitais.</p>
+          </div>
+        </div>
+
+        <form class="contact-form glow-card" id="contactForm">
+          <h3>Envie uma mensagem</h3>
+          <p>Preencha abaixo e abra um email diretamente para mim.</p>
+          <div class="field-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="field-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Conte sobre o projeto" required></textarea>
+          </div>
+          <button type="submit" class="button button-primary">Enviar mensagem</button>
+          <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="currentYear"></span> Wesley Tiago — Software Engineer</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
