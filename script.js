@@ -16,8 +16,16 @@ function toggleTheme() {
   document.body.classList.toggle('light');
 }
 
+function closeMenu() {
+  if (nav) {
+    nav.classList.remove('open');
+  }
+}
+
 function toggleMenu() {
-  nav.classList.toggle('open');
+  if (nav) {
+    nav.classList.toggle('open');
+  }
 }
 
 function updateActiveLink() {
@@ -59,26 +67,32 @@ function handleFormSubmit(event) {
 
   if (!name || !email || !message) {
     formFeedback.textContent = 'Por favor, preencha todos os campos.';
+    formFeedback.style.color = '#ff6b6b';
     return;
   }
 
+  formFeedback.style.color = '#a5f3a5';
   const subject = encodeURIComponent(`Contato via portfólio: ${name}`);
   const body = encodeURIComponent(`Nome: ${name}%0AEmail: ${email}%0A%0A${message}`);
   window.location.href = `mailto:wes.tiago15@gmail.com?subject=${subject}&body=${body}`;
   formFeedback.textContent = 'Abrindo seu cliente de email...';
 }
 
+// Event listeners
 if (themeToggle) {
   themeToggle.addEventListener('click', toggleTheme);
 }
 
 if (menuToggle) {
-  menuToggle.addEventListener('click', toggleMenu);
+  menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
 }
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    nav.classList.remove('open');
+    closeMenu();
   });
 });
 
@@ -86,9 +100,32 @@ if (form) {
   form.addEventListener('submit', handleFormSubmit);
 }
 
+// Close menu on scroll
+let lastScrollY = 0;
 window.addEventListener('scroll', () => {
+  const currentScrollY = window.scrollY;
+  if (Math.abs(currentScrollY - lastScrollY) > 50) {
+    closeMenu();
+    lastScrollY = currentScrollY;
+  }
   updateActiveLink();
   revealOnScroll();
+});
+
+// Close menu on click outside
+document.addEventListener('click', (e) => {
+  if (nav && nav.classList.contains('open')) {
+    if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+      closeMenu();
+    }
+  }
+});
+
+// Close menu on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeMenu();
+  }
 });
 
 window.addEventListener('load', () => {
